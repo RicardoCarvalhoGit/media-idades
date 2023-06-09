@@ -1,5 +1,8 @@
 import os 
+import datetime
 
+today = datetime.date.today().year
+ano = today
 
 continua = 's'
 totIdade = 0
@@ -18,7 +21,8 @@ while continua == 's':
 
 
   nome = input ("Qual o seu nome? \n")
-  idade = int (input ("Qual a sua idade? \n"))
+  anoNasc = int (input ("Que ano você nasceu? \n"))
+  idade = ano - anoNasc
   nomes.append(nome)
   idades.append(idade)
   totIdade = totIdade + idade
